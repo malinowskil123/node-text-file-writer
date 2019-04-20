@@ -13,7 +13,7 @@ request(url, function (err, response, body) {
 
     let weather = JSON.parse(body);
 
-    let message = `It's ${Math.ceil(9/5*(weather.main.temp-273)+32)} degrees in ${weather.name}!`;
+    let message = `It's ${Math.ceil(9/5*(weather.main.temp-273)+32)} degrees fahrenheit ${weather.name}!`;
     console.log(message);
 });
 
