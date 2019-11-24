@@ -1,8 +1,8 @@
-let request = require('request');
+const request = require('request');
 
-let apiKey = '23d8936d086e8ec8e7b622c8aaf6994a';
-let city = 'deer park';
-let url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`
+const apiKey = '23d8936d086e8ec8e7b622c8aaf6994a';
+const location = 'deer park';
+let url = `http://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${apiKey}`
 
 request(url, function (err, response, body) {
     if(err){
